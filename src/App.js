@@ -28,7 +28,7 @@ function FrontFace() {
       </div>
       <img className="col-12 img-front-face" src={bg} />
 
-      <h6 className="scroll-text">rolar</h6>
+      <h6 className="scroll-text">scroll</h6>
       <div class="scroll-downs">
         <div class="mousey">
           <div class="scroller"></div>
