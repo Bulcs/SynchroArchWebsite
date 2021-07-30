@@ -3,14 +3,13 @@ import "./App.css";
 import bg from "./img/bg.png";
 import worker1 from "./img/equipe/worker1.jpg";
 import worker2 from "./img/equipe/worker2.jpg";
-//import worker3 from "./img/equipe/worker3.jpg";
+import worker3 from "./img/equipe/worker3.jpg";
 import worker4 from "./img/equipe/worker4.jpg";
 import worker5 from "./img/equipe/worker5.jpg";
-//import worker6 from "./img/equipe/worker6.jpg";
 import worker7 from "./img/equipe/worker7.jpg";
 import worker8 from "./img/equipe/worker8.jpg";
 import worker9 from "./img/equipe/worker9.jpg";
-//import worker10 from "./img/equipe/worker10.jpg";
+import worker10 from "./img/equipe/worker10.jpeg";
 import worker11 from "./img/equipe/worker11.png";
 import worker12 from "./img/equipe/worker12.jpg";
 import worker13 from "./img/equipe/worker13.jpg";
@@ -121,14 +120,14 @@ function Parceiros() {
 
       <div className="col-12 parceiros-content">
         <div className="parceiros-img-div">
-          <a href="https://www.ufrn.br/">
+          <a href="https://www.ufrn.br/" target="_blank">
             <img className="ufrn-logo" src={ufrn} />
           </a>
-          <a href="https://www.imd.ufrn.br/portal/">
+          <a href="https://www.imd.ufrn.br/portal/" target="_blank">
             {" "}
             <img className="imd-logo" src={imd} />
           </a>
-          <a href="https://www.synchro.com.br/">
+          <a href="https://www.synchro.com.br/" target="_blank">
             <img className="synchro-logo" src={synchro} />
           </a>
         </div>
@@ -144,10 +143,16 @@ function EquipeTabs() {
         <h1 className="naoSelecionavel">EQUIPE</h1>
       </div>
       <div className="worker-all-tabs">
+      <Equipe
+          workerImg={worker3}
+          name={"Everton"}
+          atuacao={"Coordenador do Projeto"}
+          link3={"http://dimap.ufrn.br/~everton/"}
+        />
         <Equipe
           workerImg={worker1}
           name={"Aluízio"}
-          atuacao={"Coordenador do Projeto"}
+          atuacao={"Vice Coordenador do Projeto"}
           link1={"https://www.linkedin.com/in/aluizio-rocha-neto/"}
           link2={"https://github.com/aluiziorocha"}
           link3={"http://www.docente.ufrn.br/aluizio.rocha"}
@@ -155,36 +160,30 @@ function EquipeTabs() {
         <Equipe
           workerImg={worker2}
           name={"Thaís"}
-          atuacao={"Coordenadora do Projeto"}
+          atuacao={"Pesquisadora do Projeto"}
           link1={"https://www.linkedin.com/in/thais-batista-58b9b94a/"}
           link2={"https://orcid.org/0000-0003-3558-1450"}
           link3={"http://lattes.cnpq.br/5521922960404236"}
         />
         <Equipe
-          workerImg={worker13}
-          name={"Evertor"}
-          atuacao={"Coordenador do Projeto"}
-        />
-        <Equipe
           workerImg={worker4}
           name={"César"}
-          atuacao={"Fullstack"}
+          atuacao={"Pesquisador do Projeto"}
           link1={"https://www.linkedin.com/in/cesar-perdigao-batista/"}
           link3={"http://lattes.cnpq.br/3047076705373871"}
         />
         <Equipe
           workerImg={worker5}
           name={"Juliana"}
-          atuacao={"Fullstack"}
+          atuacao={"Pesquisadora do Projeto"}
           link1={"https://www.linkedin.com/in/oliveirajuliana"}
           link2={"https://github.com/judf/"}
           link3={"http://lattes.cnpq.br/5599540449626040"}
         />
-        <Equipe workerImg={worker13} name={"Wanderson"} atuacao={"Fullstack"} />
         <Equipe
           workerImg={worker7}
           name={"Pedro"}
-          atuacao={"Fullstack"}
+          atuacao={"Pesquisador do Projeto"}
           link1={"https://www.linkedin.com/in/pedrovb/"}
           link2={"https://github.com/PedroVictorB"}
           link3={"http://lattes.cnpq.br/7825442850615162"}
@@ -192,7 +191,7 @@ function EquipeTabs() {
         <Equipe
           workerImg={worker8}
           name={"Felipe"}
-          atuacao={"Fullstack"}
+          atuacao={"Full Stack Developer"}
           link1={
             "https://www.linkedin.com/in/felipe-morais-da-silva-9856b1192/"
           }
@@ -202,16 +201,23 @@ function EquipeTabs() {
         <Equipe
           workerImg={worker9}
           name={"Henrique"}
-          atuacao={"Fullstack"}
+          atuacao={"Full Stack Developer"}
           link1={"https://www.linkedin.com/in/henriquedavid/"}
           link2={"https://github.com/henriquedavid/"}
           link3={"http://lattes.cnpq.br/5136480770028616"}
         />
-        <Equipe workerImg={worker13} name={"Hyago"} atuacao={"Fullstack"} />
+        <Equipe
+          workerImg={worker10}
+          name={"Hyago"}
+          atuacao={"Full Stack Developer"}
+          link1={"https://www.linkedin.com/in/hyago-oliveira-147b72193"}
+          link2={"https://github.com/hyag1"}
+          link3={"http://lattes.cnpq.br/4080423203464235"}
+        />
         <Equipe
           workerImg={worker11}
           name={"Jonas"}
-          atuacao={"Fullstack"}
+          atuacao={"Full Stack Developer"}
           link1={"https://www.linkedin.com/in/jonas-de-oliveira/"}
           link2={"https://github.com/usrjonas"}
           link3={"http://lattes.cnpq.br/1069327174549709"}
@@ -219,7 +225,7 @@ function EquipeTabs() {
         <Equipe
           workerImg={worker12}
           name={"José"}
-          atuacao={"Fullstack"}
+          atuacao={"Full Stack Developer"}
           link2={"https://github.com/josevitoor"}
           link3={
             "https://drive.google.com/file/d/1d8fqgeloOQ6lxlYXM4-S2G7IZvDfe9We/edit"
@@ -228,7 +234,7 @@ function EquipeTabs() {
         <Equipe
           workerImg={worker13}
           name={"Vinícius"}
-          atuacao={"Fullstack"}
+          atuacao={"Full Stack Developer"}
           link1={
             "https://www.linkedin.com/in/vinícius-ribeiro-bulcão-b71438180/"
           }

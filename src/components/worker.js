@@ -13,21 +13,29 @@ class Equipe extends Component {
           <h3>{this.props.name}</h3>
           <h6>{this.props.atuacao}</h6>
           <div className="worker-tab-links">
-            <a href={this.props.link1} style={{ "margin-left": "20px" }}>
+            <a
+              href={this.props.link1}
+              target="_blank"
+              style={{ "margin-left": "20px" }}
+            >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
                 size="2x"
                 transform="shrink-3"
               />
             </a>
-            <a href={this.props.link2}>
+            <a href={this.props.link2} target="_blank">
               <FontAwesomeIcon
                 icon={faGithubAlt}
                 size="2x"
                 transform="shrink-3"
               />
             </a>
-            <a href={this.props.link3} style={{ "margin-right": "20px" }}>
+            <a
+              href={this.props.link3}
+              target="_blank"
+              style={{ "margin-right": "20px" }}
+            >
               <FontAwesomeIcon icon={faGlobe} size="2x" transform="shrink-3" />
             </a>
           </div>
