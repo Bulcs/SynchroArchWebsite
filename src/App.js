@@ -21,6 +21,7 @@ import NavBar from "./components/navbar";
 import BottomBarClass from "./components/bottombar";
 import ToTheTopBtn from "./components/tothetopbtn";
 import Equipe from "./components/worker";
+import { useForm, ValidationError } from "@formspree/react";
 
 function App() {
   return (
@@ -143,7 +144,7 @@ function EquipeTabs() {
         <h1 className="naoSelecionavel">EQUIPE</h1>
       </div>
       <div className="worker-all-tabs">
-      <Equipe
+        <Equipe
           workerImg={worker3}
           name={"Everton"}
           atuacao={"Coordenador do Projeto"}
@@ -247,6 +248,8 @@ function EquipeTabs() {
 }
 
 function Contact() {
+  const [state, handleSubmit] = useForm("mpzkyrnr");
+
   return (
     <div id="contact" className="contact-main-div">
       <div className="col-12 contact-title">
@@ -257,7 +260,8 @@ function Contact() {
           <h2 className="naoSelecionavel">SynchroArch</h2>
         </div>
         <div className="col-6 form">
-          <form method="post">
+          <h3 className="txt-form">Fale conosco :)</h3>
+          <form onSubmit={handleSubmit}>
             <div className="form-input-bg">
               <input
                 type="text"
@@ -265,6 +269,11 @@ function Contact() {
                 name="name"
                 placeholder="Nome"
                 required=""
+              />
+              <ValidationError
+                prefix="name"
+                field="name"
+                errors={state.errors}
               />
             </div>
             <div className="form-input-bg">
@@ -275,6 +284,11 @@ function Contact() {
                 placeholder="Email"
                 required=""
               />
+              <ValidationError
+                prefix="email"
+                field="email"
+                errors={state.errors}
+              />
             </div>
             <div className="form-message-bg">
               <textarea
@@ -283,6 +297,11 @@ function Contact() {
                 name="message"
                 placeholder="Mensagem"
               ></textarea>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
             <div className="form-button-div">
               <input

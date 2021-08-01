@@ -16,13 +16,7 @@ body {
   user-select: none; /* Possível implementação no futuro */
   /* cursor: default; */
 }
-@font-face {
-  font-family: "main-logo-font";
-  src: url("webfontkit/photographsignature-webfont.woff2") format("woff2"),
-    url("webfontkit/photographsignature-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -355,6 +349,12 @@ nav {
 /*-----------------PARCEIROS SECTION-----------------*/
 
 /*-----------------CONTACT-----------------*/
+.txt-form{
+  margin-top: 18px;
+  text-align: center;
+  color: #004272;
+  font-weight: 600;
+}
 .contact-title {
   margin: 100px 0 60px 0;
 }
@@ -484,7 +484,7 @@ nav {
   }
   #interactiveMenu {
     display: block;
-    z-index: 1;
+    z-index: 1001;
     position: fixed;
     top: 2%;
     right: 8%;
@@ -552,7 +552,7 @@ nav {
   }
   #interactiveMenu {
     display: block;
-    z-index: 1;
+    z-index: 1001;
     position: fixed;
     top: 2%;
     right: 8%;

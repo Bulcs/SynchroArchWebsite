@@ -110,10 +110,12 @@
         document.getElementById("nav").style.left = "-50%";
         contadorClick--;
       }
-      
-      
     }
 
+    document.getElementById("x-contact").onclick = function() {closeModal()};
+    function closeModal() {
+      document.getElementById("success-contact").style.display = "none";
+    }
     </script>
   </body>
 </html>
