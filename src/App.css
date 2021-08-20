@@ -189,6 +189,7 @@ nav {
   align-content: center;
   grid-template-columns: 1fr;
   grid-row-gap: 30px;
+  margin-bottom: 60px;
 }
 
 .worker-tab {
@@ -349,7 +350,7 @@ nav {
 /*-----------------PARCEIROS SECTION-----------------*/
 
 /*-----------------CONTACT-----------------*/
-.txt-form{
+.txt-form {
   margin-top: 18px;
   text-align: center;
   color: #004272;

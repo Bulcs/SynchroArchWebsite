@@ -264,79 +264,8 @@ function EquipeTabs() {
   );
 }
 
-function Contact() {
-  const [state, handleSubmit] = useForm("mpzkyrnr");
-
-  return (
-    <div id="contact" className="contact-main-div">
-      <div className="col-12 contact-title">
-        <h1 className="naoSelecionavel">ENTRE EM CONTATO</h1>
-      </div>
-      <div className="contact-logo-form">
-        <div className="col-6 logo-contact">
-          <h2 className="naoSelecionavel">SynchroArch</h2>
-        </div>
-        <div className="col-6 form">
-          <h3 className="txt-form">Fale conosco :)</h3>
-          <form onSubmit={handleSubmit}>
-            <div className="form-input-bg">
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Nome"
-                required=""
-              />
-              <ValidationError
-                prefix="name"
-                field="name"
-                errors={state.errors}
-              />
-            </div>
-            <div className="form-input-bg">
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required=""
-              />
-              <ValidationError
-                prefix="email"
-                field="email"
-                errors={state.errors}
-              />
-            </div>
-            <div className="form-message-bg">
-              <textarea
-                rows="4"
-                cols="41"
-                name="message"
-                placeholder="Mensagem"
-              ></textarea>
-              <ValidationError
-                prefix="Message"
-                field="message"
-                errors={state.errors}
-              />
-            </div>
-            <div className="form-button-div">
-              <input
-                id="submit-button"
-                type="submit"
-                name="submit"
-                value="ENVIAR"
-              />
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-  );
-}
-
 function BottomBar() {
   return <BottomBarClass />;
 }
 
-export { App, FrontFace, EquipeTabs, Projeto, Parceiros, BottomBar, Contact };
+export { App, FrontFace, EquipeTabs, Projeto, Parceiros, BottomBar };
