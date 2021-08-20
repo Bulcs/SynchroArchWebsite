@@ -9,7 +9,7 @@ class NavBar extends Component {
         <ul className="col-12 menu-nav">
           <li className="item-nav">
             <a href="" className="a-item-nav logo-menu-mobile">
-              <h2 class="naoSelecionavel icon-menu-mobile">SynchroArch</h2>
+              <h2 className="naoSelecionavel icon-menu-mobile">SynchroArch</h2>
             </a>
           </li>
           <li className="item-nav">

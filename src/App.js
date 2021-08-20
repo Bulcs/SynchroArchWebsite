@@ -13,6 +13,8 @@ import worker10 from "./img/equipe/worker10.jpeg";
 import worker11 from "./img/equipe/worker11.png";
 import worker12 from "./img/equipe/worker12.jpg";
 import worker13 from "./img/equipe/worker13.jpg";
+import worker14 from "./img/equipe/worker14.jfif";
+import worker15 from "./img/equipe/worker15.jfif";
 import imd from "./img/imd-logo.png";
 import pdf_projeto from "./projeto_pdf/projeto.pdf";
 import ufrn from "./img/ufrn-logo.png";
@@ -167,6 +169,13 @@ function EquipeTabs() {
           link3={"http://lattes.cnpq.br/5521922960404236"}
         />
         <Equipe
+          workerImg={worker15}
+          name={"Alan"}
+          atuacao={"Pesquisador do Projeto"}
+          link1={"www.linkedin.com/in/alan-fernandes-89a58a173"}
+          link2={"https://github.com/alanfernandes63"}
+        />
+        <Equipe
           workerImg={worker4}
           name={"César"}
           atuacao={"Pesquisador do Projeto"}
@@ -231,6 +240,14 @@ function EquipeTabs() {
           link3={
             "https://drive.google.com/file/d/1d8fqgeloOQ6lxlYXM4-S2G7IZvDfe9We/edit"
           }
+        />
+        <Equipe
+          workerImg={worker14}
+          name={"Lisandra"}
+          atuacao={"Full Stack Developer"}
+          link1={"https://www.linkedin.com/in/melo-lisandra"}
+          link2={"https://gitlab.com/veronicamars73"}
+          link3={"https://dev.to/lisandramelo/"}
         />
         <Equipe
           workerImg={worker13}
